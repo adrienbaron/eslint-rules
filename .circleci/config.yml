@@ -10,11 +10,12 @@ jobs:
     executor: node
     working_directory: ~/project
     steps:
+      - checkout
       - run:
           name: Populate .npmrc
           command: |
-            echo "@cazoo-uk:registry=https://npm.pkg.github.com/" >> .npmrc
-            echo "//npm.pkg.github.com/:_authToken=${CAZOO_GITHUB_NPM_TOKEN}" >> .npmrc
+            echo "@cazoo-uk:registry=https://npm.pkg.github.com/" >> ~/.npmrc
+            echo "//npm.pkg.github.com/:_authToken=${CAZOO_GITHUB_NPM_TOKEN}" >> ~/.npmrc
       - run: npm ci
       - run:
           name: Deploy NPM package
