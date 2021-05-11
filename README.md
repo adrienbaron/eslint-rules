@@ -27,6 +27,7 @@ PRs are also welcome if there are some useful rules/plugins that we could add to
 When using React ⚛️:
 
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) for rules regarding React
+- [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) for rules regarding React hooks
 - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) for rules regarding accessibility best practices
 
 It also tells ESLint that `jest` exists in `.test.ts(x)` and `.spec.ts(x)` files. 

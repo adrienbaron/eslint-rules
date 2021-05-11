@@ -43,6 +43,15 @@ const baseConfig = {
       "env": {
         "jest": true
       },
+    },
+    {
+      "files": ["jest.config.js", "next.config.js"],
+      "env": {
+        "node": true
+      },
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off"
+      }
     }
   ]
 }
@@ -59,6 +68,7 @@ module.exports = {
         ...baseConfig.extends,
         "plugin:jsx-a11y/recommended",
         "plugin:react/recommended",
+        "plugin:react-hooks/recommended"
       ],
       "parserOptions": {
         ...baseConfig.parserOptions,
