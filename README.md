@@ -5,8 +5,8 @@
 It's an NPM package providing an opinionated ESLint configuration to use at Cazoo.
 It exposes two ESLint presets:
 
-- `plugin:@cazoo-uk/eslint/react` for React based applications
-- `plugin:@cazoo-uk/eslint/node` for Node.js applications
+- `plugin:@cazoo/eslint/react` for React based applications
+- `plugin:@cazoo/eslint/node` for Node.js applications
 
 ## Why do we want this?
 
@@ -46,10 +46,10 @@ Then follow the instructions for a new app bellow.
 
 ### On a new app
 
-First install `@cazoo-uk/eslint-plugin-eslint` and `eslint` as dev dependencies:
+First install `@cazoo/eslint-plugin-eslint` and `eslint` as dev dependencies:
 
 ```bash
-npm i -D @cazoo-uk/eslint-plugin-eslint eslint@7
+npm i -D @cazoo/eslint-plugin-eslint eslint@7
 ```
 
 Then add an `.eslintrc.json` config file to the root of your project containing only:
@@ -59,7 +59,7 @@ Then add an `.eslintrc.json` config file to the root of your project containing 
 ```json
 {
   "extends": [
-    "plugin:@cazoo-uk/eslint/react"
+    "plugin:@cazoo/eslint/react"
   ]
 }
 ```
@@ -69,7 +69,7 @@ Then add an `.eslintrc.json` config file to the root of your project containing 
 ```json
 {
   "extends": [
-    "plugin:@cazoo-uk/eslint/node"
+    "plugin:@cazoo/eslint/node"
   ]
 }
 ```
@@ -144,7 +144,7 @@ npm i -D husky@4
 ```
 
 ⚠️ Husky 5 licence doesn't allow use in non open-source project.
-Please use Husky 4.x!
+Please use Husky 4.x in private projects!
 
 Then add `Husky` configuration in your `package.json`:
 

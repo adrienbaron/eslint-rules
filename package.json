@@ -1,10 +1,10 @@
 {
-  "name": "@cazoo-uk/eslint-plugin-eslint",
+  "name": "@cazoo/eslint-plugin-eslint",
   "version": "1.0.0",
   "description": "ESLint rules for Cazoo org",
   "main": "src/index.js",
   "author": "Adrien Baron <adrien.baron@cazoo.co.uk>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "files": [
     "src"
   ],
@@ -12,6 +12,10 @@
     "type": "git",
     "url": "git@github.com:Cazoo-uk/cazoo-eslint.git"
   },
+  "bugs": {
+    "url": "https://github.com/Cazoo-uk/cazoo-eslint/issues"
+  },
+  "homepage": "https://github.com/Cazoo-uk/cazoo-eslint#readme",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.23.0",
     "@typescript-eslint/parser": "^4.23.0",
