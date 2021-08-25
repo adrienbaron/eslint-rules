@@ -8,8 +8,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v1
+            - name: Install dependencies
+              run: npm ci
             - name: Make stable release to npm
-              uses: esamattis/npm-release@v2
-              with:
-                  type: stable
-                  token: ${{ secrets.CAZOO_NPM_TOKEN }}
+              run: npm publish --access public
+              env:
+                  NODE_AUTH_TOKEN: ${{secrets.CAZOO_NPM_TOKEN}}
