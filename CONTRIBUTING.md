@@ -14,7 +14,7 @@ Once the PR is merged:
 ```
 git checkout main && git pull
 NEW_VERSION="$(npx -c 'echo "$npm_package_version"')"
-git tag -a "$NEW_VERSION" -m "$NEW_VERSION"
+git tag -a "v$NEW_VERSION" -m "v$NEW_VERSION"
 git push --follow-tags
 ```
 
