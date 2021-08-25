@@ -1,6 +1,6 @@
 {
   "name": "@cazoo/eslint-plugin-eslint",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ESLint rules for Cazoo org",
   "main": "src/index.js",
   "author": "Adrien Baron <adrien.baron@cazoo.co.uk>",
