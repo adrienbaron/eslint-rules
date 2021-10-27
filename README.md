@@ -30,7 +30,7 @@ When using React ⚛️:
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) for rules regarding React hooks
 - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) for rules regarding accessibility best practices
 
-It also tells ESLint that `jest` exists in `.test.ts(x)` and `.spec.ts(x)` files. 
+It also tells ESLint that `jest` exists in `.test.ts(x)` and `.spec.ts(x)` files.
 
 ## How do I use it?
 
@@ -137,16 +137,16 @@ VSCode will now reformat your file with prettier and sort your imports on save, 
 
 If you wish to enforce running ESLint before commits you can use [Husky 🐶](https://github.com/typicode/husky/tree/master).
 
-First install `husky` as a dev dependency:
+First install `husky` and `lint-staged` as dev dependencies:
 
 ```bash
-npm i -D husky@4
+npm i -D husky@4 lint-staged
 ```
 
 ⚠️ Husky 5 licence doesn't allow use in non open-source project.
 Please use Husky 4.x in private projects!
 
-Then add `Husky` configuration in your `package.json`:
+Then add their configuration in your `package.json`:
 
 ```json
 {
@@ -163,4 +163,4 @@ Then add `Husky` configuration in your `package.json`:
 }
 ```
 
-This will only run ESLint on the files that are about to be committed, so it should be quite fast ⚡️! 
+This will only run ESLint on the files that are about to be committed, so it should be quite fast ⚡️!
