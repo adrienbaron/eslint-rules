@@ -3,6 +3,9 @@ on:
         tags:
             - 'v*.*.*'
 
+permissions:
+  contents: read       # Required for actions/checkout
+
 jobs:
     release:
         runs-on: ubuntu-latest
