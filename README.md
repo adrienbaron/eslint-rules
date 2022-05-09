@@ -36,7 +36,7 @@ It also tells ESLint that `jest` exists in `.test.ts(x)` and `.spec.ts(x)` files
 
 ### Migrating an existing app
 
-If you already ESLint on your project first remove all ESLint plugins dependencies as well as prettier:
+If you already are using ESLint on your project first remove all ESLint plugins dependencies as well as prettier:
 
 ```
 npm remove eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-prettier eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react eslint-plugin-simple-import-sort prettier
@@ -49,7 +49,7 @@ Then follow the instructions for a new app bellow.
 First install `@cazoo/eslint-plugin-eslint` and `eslint` as dev dependencies:
 
 ```bash
-npm i -D @cazoo/eslint-plugin-eslint eslint@7
+npm i -D @cazoo/eslint-plugin-eslint eslint@8
 ```
 
 Then add an `.eslintrc.json` config file to the root of your project containing only:
