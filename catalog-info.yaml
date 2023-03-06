@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: eslint-plugin-eslint
+  description: Opinionated ESLint configuration for React and Node.js applications
+  tags:
+    - typescript
+spec:
+  type: library
+  lifecycle: production
+  owner: group:developer-experience
